@@ -68,7 +68,7 @@ Now that we are inside VS Code, open the ```devcontainer.json``` file from the `
 
 !!! Tip
     - This uses the Go base image provided by Microsoft.
-    - The golang.go extension adds helpful debugging and code navigation features
+    - The golang.go extension adds helpful debugging and code navigation features.
 
 Save the file and reopen the project in the Dev Container:
 
@@ -99,3 +99,49 @@ go mod init hello-comp423
 Navigate into the project folder:
 ```bash
 cd hello-comp423
+```
+
+### 5. Write Your Program
+Create a new file named ```main.go ``` inside the project folder, and add the following content:
+```bash
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, COMP423!")
+}
+```
+
+!!! Tip
+    fmt.Println() is used to print text to the console in Go.
+
+### 6. Run the Program
+Run the program:
+```bash
+go run main.go
+```
+You should see the following output:
+```bash
+Hello, COMP423!
+```
+
+### 7. Build the Program
+To create a standalone executable, use the ```go build``` command:
+```bash
+go build -o hello-comp423
+```
+This generates a binary file named ```hello-comp423```. Run the binary directly using:
+```bash
+./hello-comp423
+```
+You should see the same output:
+```bash
+Hello, COMP423!
+```
+!!! Discussion
+    - The go build command compiles your code into an executable binary, similar to the gcc command in COMP211 for C programs. However, Go produces statically linked binaries by default, meaning you don’t need external dependencies to run the binary.
+    - Using go build is preferred when deploying your application, as the compiled binary is optimized and can run independently without needing Go installed.
+
+## Conclusion
+You have successfully used a git repository, built a dev container, run helloworld in Go, and learned the difference between ```go run``` and ```go build```.
