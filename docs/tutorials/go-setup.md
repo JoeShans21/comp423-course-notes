@@ -73,3 +73,29 @@ Now that we are inside VS Code, open the ```devcontainer.json``` file from the `
 Save the file and reopen the project in the Dev Container:
 
 * When prompted, click Reopen in Container in VS Code.
+
+### 3. Verify Go Installation
+Inside the Dev Container terminal, make sure Rust is installed and up to date by running:
+```bash
+go version
+```
+You should see an output like:
+```bash
+go version go1.21.0 linux/amd64
+```
+!!! Tip
+    If the version is outdated, rebuild the container to ensure the latest image is used.
+
+### 4. Create a Go Project
+Initialize a new Go module, mine is called ```hello-comp423```
+```bash
+mkdir hello-comp423
+cd hello-comp423
+go mod init hello-comp423
+```
+!!! Tip
+    The go mod init command creates a go.mod file, which defines your module's dependencies.
+
+Navigate into the project folder:
+```bash
+cd hello-comp423
