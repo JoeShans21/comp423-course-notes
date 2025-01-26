@@ -94,7 +94,7 @@ cd hello-comp423
 go mod init hello-comp423
 ```
 !!! Tip
-    The go mod init command creates a go.mod file, which defines your module's dependencies.
+    The go mod init command creates a ```go.mod``` file, which defines your module's dependencies.
 
 Navigate into the project folder:
 ```bash
