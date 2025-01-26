@@ -109,7 +109,7 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, COMP423!")
+    fmt.Println("Hello COMP423")
 }
 ```
 
@@ -123,7 +123,7 @@ go run main.go
 ```
 You should see the following output:
 ```bash
-Hello, COMP423!
+Hello COMP423
 ```
 
 ### 7. Build the Program
@@ -137,7 +137,7 @@ This generates a binary file named ```hello-comp423```. Run the binary directly 
 ```
 You should see the same output:
 ```bash
-Hello, COMP423!
+Hello COMP423
 ```
 !!! Discussion
     - The go build command compiles your code into an executable binary, similar to the gcc command in COMP211 for C programs. However, Go produces statically linked binaries by default, meaning you don’t need external dependencies to run the binary.
