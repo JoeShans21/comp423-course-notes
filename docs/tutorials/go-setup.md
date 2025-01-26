@@ -74,6 +74,9 @@ Save the file and reopen the project in the Dev Container:
 
 * When prompted, click Reopen in Container in VS Code.
 
+!!! Tip
+    The devcontainer.json file defines the environment setup for the project, including the Go base image and VS Code extensions.
+
 ### 3. Verify Go Installation
 Inside the Dev Container terminal, make sure Go is installed and up to date by running:
 ```bash
