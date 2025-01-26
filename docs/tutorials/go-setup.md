@@ -75,7 +75,7 @@ Save the file and reopen the project in the Dev Container:
 * When prompted, click Reopen in Container in VS Code.
 
 ### 3. Verify Go Installation
-Inside the Dev Container terminal, make sure Rust is installed and up to date by running:
+Inside the Dev Container terminal, make sure Go is installed and up to date by running:
 ```bash
 go version
 ```
