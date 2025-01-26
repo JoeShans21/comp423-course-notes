@@ -68,7 +68,7 @@ Now that we are inside VS Code, open the ```devcontainer.json``` file from the `
 
 !!! Tip
     - This uses the Go base image provided by Microsoft.
-    - The golang.go extension adds helpful debugging and code navigation features.
+    - The ```golang.go``` extension adds helpful debugging and code navigation features.
 
 Save the file and reopen the project in the Dev Container:
 
