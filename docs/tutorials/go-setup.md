@@ -68,14 +68,17 @@ Now that we are inside VS Code, open the ```devcontainer.json``` file from the `
 
 !!! Tip
     - This uses the Go base image provided by Microsoft.
-    - The golang.go extension adds helpful debugging and code navigation features.
+    - The ```golang.go``` extension adds helpful debugging and code navigation features.
 
 Save the file and reopen the project in the Dev Container:
 
 * When prompted, click Reopen in Container in VS Code.
 
+!!! Tip
+    The devcontainer.json file defines the environment setup for the project, including the Go base image and VS Code extensions.
+
 ### 3. Verify Go Installation
-Inside the Dev Container terminal, make sure Rust is installed and up to date by running:
+Inside the Dev Container terminal, make sure Go is installed and up to date by running:
 ```bash
 go version
 ```
@@ -94,7 +97,7 @@ cd hello-comp423
 go mod init hello-comp423
 ```
 !!! Tip
-    The go mod init command creates a go.mod file, which defines your module's dependencies.
+    The go mod init command creates a ```go.mod``` file, which defines your module's dependencies.
 
 Navigate into the project folder:
 ```bash
